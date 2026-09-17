@@ -20,8 +20,9 @@ function showSignup() {
 // Event Listeners for form submission
 loginForm.addEventListener('submit', function(e) {
     e.preventDefault();
-    alert('Login successful! Redirecting to Al-Shafa Medical Store homepage...');
+    window.location.href = "index.html";
 });
+
 
 signupForm.addEventListener('submit', function(e) {
     e.preventDefault();
