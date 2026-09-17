@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e0f2f1, #00796b);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Brand Header */
+.brand-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.brand-icon {
+    font-size: 45px;
+    color: #00796b;
+    margin-bottom: 8px;
+}
+
+.brand-header h1 {
+    font-size: 22px;
+    color: #004d40;
+    margin-bottom: 4px;
+}
+
+.brand-header p {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Toggle Tabs */
+.form-toggle {
+    display: flex;
+    background: #e0f2f1;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.toggle-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    font-weight: 600;
+    color: #00796b;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.toggle-btn.active {
+    background: #00796b;
+    color: #ffffff;
+}
+
+/* Form Styles */
+.auth-form {
+    display: none;
+    flex-direction: column;
+}
+
+.auth-form.active-form {
+    display: flex;
+}
+
+.auth-form h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #00796b;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #00796b;
+    box-shadow: 0 0 5px rgba(0, 121, 107, 0.3);
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 18px;
+    color: #555;
+}
+
+.form-options a {
+    color: #00796b;
+    text-decoration: none;
+}
+
+.form-options a:hover {
+    text-decoration: underline;
+}
+
+.submit-btn {
+    background: #00796b;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: #004d40;
+}
